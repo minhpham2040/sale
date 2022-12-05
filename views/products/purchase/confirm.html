@@ -1,0 +1,53 @@
+<style>
+  .main {
+    display: flex;
+    height: 100vh;
+  }
+
+  .confirm-container {
+    margin: 3rem auto auto;
+  }
+
+  .confirm-title {
+    font-size: 2rem;
+  }
+
+  .confirm-list {
+    font-size: 1.6rem;
+  }
+
+  .confirm-list li {
+    margin-top: 1rem;
+  }
+
+  .confirm-list li:last-child {
+    margin-bottom: 1rem;
+  }
+
+  .correct {
+    font-size: 1.4rem;
+    padding: 0 .4rem;
+  }
+
+  .edit {
+    margin-left: 10rem;
+    font-size: 1.4rem;
+    padding: 0 .4rem;
+  }
+</style>
+<div class="main">
+  <div class="confirm-container">
+    <h3 class="confirm-title">Is this information correct? </h3>
+    <ul class="confirm-list">
+      <li>Name: {{infoUser.name}}</li>
+      <li>Phone: {{infoUser.phone}}</li>
+      <li>Address: {{infoUser.address}}</li>
+    </ul>
+    <button class="correct">
+      <a href="/products/purchaseThanks">Correct</a>
+    </button>
+    <button class="edit">
+      <a href="/products/purchaseEdit">Edit info</a>
+    </button>
+  </div>
+</div>
